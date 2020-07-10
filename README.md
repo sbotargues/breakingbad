@@ -1,4 +1,4 @@
-![158834](/Users/sergibotargues/Desktop/breakigbad/158834.jpg)
+![](https://wallpaperplay.com/walls/full/d/f/c/158834.jpg)
 
 
 
@@ -37,8 +37,6 @@ The **MVP** will cover the following:
   - Assets/
     - img/
     - fonts/
-
-  
 
   ### Links
 
