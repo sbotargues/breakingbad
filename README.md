@@ -1,4 +1,4 @@
-![158834](breakingbad/158834.jpg)
+![](https://wallpaperplay.com/walls/full/d/f/c/158834.jpg)
 
 
 
