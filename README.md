@@ -1,4 +1,6 @@
-# <img src="/Users/sergibotargues/Desktop/captures/158834.jpg" alt="158834" style="zoom:30%;" />
+![158834](/Users/sergibotargues/Desktop/breakigbad/158834.jpg)
+
+
 
 # BREAKING BAD
 
@@ -12,6 +14,8 @@ The **MVP** will cover the following:
 - **FAQ**: Everything you need about Breaking Bad. Ask page.
 - **Signup**: A registration form for new users.
 - **Login**: A sign in form for existing users.
+
+
 
 ### Data Structure
 
@@ -33,6 +37,8 @@ The **MVP** will cover the following:
   - Assets/
     - img/
     - fonts/
+
+  
 
   ### Links
 
