@@ -50,7 +50,7 @@ The **MVP** will cover the following:
 
   [Github Repo URL](https://github.com/sbotargues/breakingbad)
 
-  #### Spoonacular
+  #### BREAKING BAD API
 
   Api Description
 
