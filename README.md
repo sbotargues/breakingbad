@@ -48,7 +48,11 @@ The **MVP** will cover the following:
 
   [Github Repo URL](https://github.com/sbotargues/breakingbad)
 
+<<<<<<< HEAD
   #### Breaking bad API
+=======
+  #### BREAKING BAD API
+>>>>>>> 8b18a7a7df585c0473537b556b9f7daae6bca345
 
   Api Description
 
@@ -57,4 +61,7 @@ The **MVP** will cover the following:
   
 
   
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8b18a7a7df585c0473537b556b9f7daae6bca345
