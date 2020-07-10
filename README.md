@@ -33,7 +33,7 @@ The **MVP** will cover the following:
     - Signup.js
     - User.js
     - Validator.js
-    - spoonacularApi.js
+    - BreakingBadApi.js
   - Assets/
     - img/
     - fonts/
