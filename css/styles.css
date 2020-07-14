@@ -1,0 +1,137 @@
+
+::before{
+    margin: 0;
+    padding: 0;
+    
+
+}
+body{
+    font-family: "defont/BREAKING BAD 3.ttf";
+    background: url(../img/greensmoke.JPG);
+    background-size: cover;
+    position: relative;
+    font-family: 'Architects Daughter', cursive;
+    
+}
+.navbar {
+background:white; 
+}
+#spanbutton{
+}
+.sections{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    
+    
+}
+.navbar-toggler {
+
+}
+
+
+
+h1,h2,h3{
+    color: rgb(254, 255, 255);
+    text-shadow: rgba(14, 53, 3, 0.5) -3px 0;
+    text-align: center;
+    -webkit-text-stroke: 0.6px black;
+    
+}
+
+.carousel-inner{
+   width: 375px;
+   border: 4px solid rgba(91, 10, 10, 0.6);
+   border-style: groove;
+}
+
+
+.season1.season2,.season3,.season4,.season5{
+
+    
+}
+
+
+/*dashboard characters*/
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images{
+    width: 375px;
+
+}
+h4{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    width: 370px;
+    margin: 10px 0;
+}
+
+/*login*/
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+.login{
+    padding: 16px;
+      
+}
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  .menuicon{
+     display: inline-block;
+  cursor: pointer; 
+  }
+
+/*Signup*/
+input[type=text],{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+.signup{
+    padding: 16px;
+}
+
+.message-container p {
+color: rgb(211, 223, 214)
+}
+
+/*Responsive iphone 6/7/8 plus*/
+@media screen and (min-width: 414px) {
+    .carousel-inner{
+        width: 414px;
+        }
+    }
+/*Responsive ipad*/
+    @media screen and (min-width: 768px) {
+        .carousel-inner{
+            width: 768px;
+            }
+        }

@@ -1,0 +1,78 @@
+'body{
+    margin: 0;
+    font-family: "Century Gothic", 'URW Gothic L', sans-serif;
+    background: #FFFFFF; 
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  
+  nav .navigation{
+    margin: 0;
+    background: linear-gradient(to bottom, black, indigo);
+    text-align: center;
+    padding: 10px;
+  }
+  nav ul > .navigation{
+    display: inline;
+    
+  }
+  nav .navigation > li{
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+    margin: 0 10px;
+    padding: 10px;
+  }
+  nav a{
+    padding: 10px; 
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 10px;
+  }
+  #nav-toggle{
+    display: none;
+  }
+  
+  label{
+    display: none;
+    
+  }
+  h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+  }
+  p{
+    text-align: justify;
+    margin: 0 20px;
+  }
+  @media screen and (max-width: 500px){
+    nav a{
+      display: block;
+    }
+    nav .navigation > li{
+      display: inline;
+    }
+   
+    label {
+      display: block;
+      font-size: 30px;
+    text-align: center;
+      cursor: pointer;
+      width: 100%;
+      margin: 0 auto;
+      color: #FFFFFF;
+      background: black;
+    }
+    .navigation {
+      text-align: center;
+    }
+    .navigation{
+      display: none;
+    }
+    #nav-toggle:checked + .navigation{
+      display: block;
+    }
+  }
+  

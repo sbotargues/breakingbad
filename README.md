@@ -21,20 +21,20 @@ The **MVP** will cover the following:
 
 - Root/
 
-  - Index.html
+  - index.html
   - breakingbad.html
-  - Far.html
+  - far.html
   - registrer.html
-  - Signin.html
+  - signin.html
   - css/
-    - Style.css
-  - Js/
-    - Main.js
+    - style.css
+  - js/
+    - main.js
     - Signup.js
     - User.js
     - Validator.js
-    - spoonacularApi.js
-  - Assets/
+    - BreakingBadApi.js
+  - assets/
     - img/
     - fonts/
 
@@ -49,10 +49,14 @@ The **MVP** will cover the following:
   [Github Repo URL](https://github.com/sbotargues/breakingbad)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   #### Breaking bad API
 =======
   #### BREAKING BAD API
 >>>>>>> 8b18a7a7df585c0473537b556b9f7daae6bca345
+=======
+  #### Breaking Bad API
+>>>>>>> af4a58f1be063a11f3b5511ab45bfdd1cd151734
 
   Api Description
 
