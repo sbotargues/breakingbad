@@ -33,7 +33,7 @@ class Validator {
     emailIsValid = (email) => {
       // RegEx objeto special - contiene las reglas de la sintaxis
       const emailRegEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
-  
+      
       // metodo `test` prueba si la cadena cumple las reglas
       // y devuelve `true` o `false`
       const isValid = emailRegEx.test(email);

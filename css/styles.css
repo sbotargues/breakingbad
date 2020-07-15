@@ -1,137 +1,245 @@
-
-::before{
-    margin: 0;
-    padding: 0;
-    
-
+::before {
+  margin: 0;
+  padding: 0;
 }
-body{
-    font-family: "defont/BREAKING BAD 3.ttf";
-    background: url(../img/greensmoke.JPG);
-    background-size: cover;
-    position: relative;
-    font-family: 'Architects Daughter', cursive;
-    
-}
-.navbar {
-background:white; 
-}
-#spanbutton{
-}
-.sections{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+body {
+  background: url(../img/greensmoke.JPG);
+  background-size: cover;
+  font-family: "Architects Daughter", cursive;
 }
 
-.header{
-    
-    
+.sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  padding-top: 20px;
+  padding-bottom: 70px;
+  padding-left: 70px;
+  padding-right: 70px;
+  width: 100%;
+}
+.jumbotron {
+  padding: 0, 0, 10px, 10px;
+  background: rgb(102, 153, 153); /* This is for ie8 and below */
+  background: rgba(102, 153, 153, 0.3);
+}
+IMG.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 10px solid rgb(102, 153, 153);
+}
+.img.displayed:hover {
+  border-color: #f1f1f1;
+}
+p {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.img-responsive {
+  border: 10px solid rgb(102, 153, 153);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  height: 300px;
+  width: auto;
+}
+.img-responsive:hover {
+  border-color: #f1f1f1;
+}
+@media (max-width: @screen-xs) {
+  h1 {
+    font-size: 10px;
+  }
+  h2 {
+    font-size: 10px;
+  }
+  p {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: @screen-sm) {
+  h1 {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  p {
+    font-size: 10px;
+  }
 }
 .navbar-toggler {
-
 }
 
-
-
-h1,h2,h3{
-    color: rgb(254, 255, 255);
-    text-shadow: rgba(14, 53, 3, 0.5) -3px 0;
-    text-align: center;
-    -webkit-text-stroke: 0.6px black;
-    
+h2 {
+  color: white;
+  text-shadow: 4px 4px 4px #333;
+  text-align: center;
+  margin-top: 200px;
 }
 
-.carousel-inner{
-   width: 375px;
-   border: 4px solid rgba(91, 10, 10, 0.6);
-   border-style: groove;
+h1,
+h2,
+h3 {
+  color: rgb(254, 255, 255);
+  text-shadow: rgba(14, 53, 3, 0.5) -3px 0;
+  text-align: center;
+  -webkit-text-stroke: 0.6px black;
 }
 
-
-.season1.season2,.season3,.season4,.season5{
-
-    
+.charactersHome {
 }
-
 
 /*dashboard characters*/
-.container{
+.mainDashboard{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url(../img/alfombraroja.jpg); 
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.images{
-    width: 375px;
-
+article{
+    margin-top: 50px;
+    background-color: black;
+    border: 10px solid rgb(102, 153, 153);
 }
-h4{
-    color: white;
-    font-size: 15px;
-    text-align: center;
-    width: 370px;
-    margin: 10px 0;
+.images {
+  width: 375px;
+  border-top: 10px solid rgb(102, 153, 153);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  
 }
-
+h4 {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  width: 370px;
+  margin: 10px 0;
+}
 /*login*/
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
 
-.login{
-    padding: 16px;
-      
+.login {
+  padding: 16px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-  }
-  button:hover {
-    opacity: 0.8;
-  }
-  .menuicon{
-     display: inline-block;
-  cursor: pointer; 
-  }
+  background: linear-gradient(to bottom, green, rgb(146, 144, 3));
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  opacity: 0.8;
+}
+.menuicon {
+  display: inline-block;
+  cursor: pointer;
+}
 
 /*Signup*/
-input[type=text],{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
 
-.signup{
-    padding: 16px;
+.signup {
+  padding: 16px;
 }
 
 .message-container p {
-color: rgb(211, 223, 214)
+  color: rgb(15, 209, 209);
+  font-size: 16px;
 }
 
 /*Responsive iphone 6/7/8 plus*/
 @media screen and (min-width: 414px) {
-    .carousel-inner{
-        width: 414px;
-        }
-    }
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+}
 /*Responsive ipad*/
-    @media screen and (min-width: 768px) {
-        .carousel-inner{
-            width: 768px;
-            }
-        }
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(../img/amarillo-cara.jpg);
+  }
+}
+/*Responsive ipad pro*/
+
+@media screen and (min-width: 1024px) {
+  input[type="text"],
+  input[type="password"] {
+    width: 50%;
+    padding: 24px 40px;
+    margin: 16px 0;
+    display: inline-block;
+    border: 2px solid #4caf50;
+    box-sizing: border-box;
+    font-size: 30px;
+  }
+  .button {
+    background-color: #4caf50;
+    color: white;
+    padding: 28px 40px;
+    margin: 16px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    font-size: 40px;
+  }
+  .message-container p {
+    color: rgb(15, 209, 209);
+    font-size: 32px;
+  }
+  .signup {
+  }
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+  }
+}

@@ -1,14 +1,14 @@
-'body{
+body{
     margin: 0;
-    font-family: "Century Gothic", 'URW Gothic L', sans-serif;
-    background: #FFFFFF; 
     background-repeat: no-repeat;
     width: 100%;
   }
   
   nav .navigation{
+    width: 100%;
+    position: fixed;   
     margin: 0;
-    background: linear-gradient(to bottom, black, indigo);
+    background: linear-gradient(to bottom, green, rgb(146, 144, 3));
     text-align: center;
     padding: 10px;
   }
@@ -47,9 +47,10 @@
     text-align: justify;
     margin: 0 20px;
   }
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 716px){
     nav a{
       display: block;
+      width: 100%;
     }
     nav .navigation > li{
       display: inline;
@@ -58,7 +59,7 @@
     label {
       display: block;
       font-size: 30px;
-    text-align: center;
+      text-align: center;
       cursor: pointer;
       width: 100%;
       margin: 0 auto;
