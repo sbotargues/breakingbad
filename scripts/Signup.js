@@ -4,7 +4,6 @@
 class Signup {
   constructor () {
     this.nameInput = document.querySelector("#name");
-    this.pokemonInput = document.querySelector("#pokemon");
     
     this.emailInput = document.querySelector("#email");
     this.passwordInput = document.querySelector("#password");
@@ -15,65 +14,51 @@ class Signup {
 
   }
 
-
-  // gestionar cambios del input "email"
   handleEmailInput = (event) => {
     const email = event.target.value;
 
-    // validar el texto del input email
     validator.validateValidEmail(email);
 
     const errors = validator.getErrors();
 
-    // si el nombre del email es valido
     if (!errors.invalidEmailError) {
-      // comprueba si el email es unico
+
       validator.validateUniqueEmail(email);
     }
 
     this.setErrorMessages();
 
-    // comprobar si hay errores, si no hay errores activa el boton Sign up (disabled = false)
     this.checkButton();
   }
 
-  // gestionar cambios del input "password"
   handlePasswordInput = (event) => {
     const password = event.target.value;
     const passwordRepeat = this.repeatPasswordInput.value;
 
-
-    // validar el texto del input password
     validator.validatePassword(password);
     validator.validatePasswordRepeat(password, passwordRepeat);
 
     this.setErrorMessages();
 
-    // comprobar si hay errores, si no hay errores activa el boton Sign up (disabled = false)
     this.checkButton();
   }
 
-  // gestionar cambios del input "repeat-password"
   handleRepeatPasswordInput = (event) => {
     const passwordRepeat = event.target.value;
     const password = this.passwordInput.value;
 
-    // validar el texto del input password
-    // validar el texto del input repeatPassword
     validator.validatePassword(password);
     validator.validatePasswordRepeat(password, passwordRepeat);
 
     this.setErrorMessages();
 
-    // comprobar si hay errores, si no hay errores activa el boton Sign up (disabled = false)
     this.checkButton();
   }
 
-  // gestionar el envio de los datos (submit)
   saveData = (event) => {
-    // Cuando el evento ocurre, cancelalo y no recargue la pagina
+
     event.preventDefault();
-    // recoger los valores de cada input
+    
     const name = this.nameInput.value;
     const email = this.emailInput.value;
     const password = this.passwordInput.value;
@@ -81,12 +66,9 @@ class Signup {
 
     const newUser = new User(name, email, password);
 
-    // guardar el nuevo usuario en la base de datos ( simulada :D )
     db.saveNewUser( newUser );
 
 
-
-    // vaciar el form
     this.nameInput.value = "";
     this.emailInput.value = "";
     this.passwordInput.value = "";
@@ -95,16 +77,14 @@ class Signup {
     this.showSuccessMessage();
     this.removeMessages();
 
-    // reiniciar los errores del `validator`
     validator.resetValidator();
-    // desactivar el botón Sign Up de nuevo
+    
     this.buttonInput.disabled = true;
     window.location.href="./index.html"
   }
 
-  // registarar funciones para cada input/campo
   addListeners = () => {
-    // escucha para los cambios de texto
+
     this.emailInput.addEventListener("input", this.handleEmailInput );
     this.passwordInput.addEventListener("input", this.handlePasswordInput);
     this.repeatPasswordInput.addEventListener("input", this.handleRepeatPasswordInput);
@@ -115,11 +95,11 @@ class Signup {
   }
 
   showSuccessMessage = () => {
-    // vacia los errores para que no se sumen
+  
     this.errorsWrapper.innerHTML = "";
 
     const errorsObj = validator.getErrors();
-    // convertir el objeto a un array de strings
+    
     const errorsStringsArr = Object.values(errorsObj);
 
     if (errorsStringsArr.length > 1) {
@@ -133,8 +113,7 @@ class Signup {
 
   }
 
-  
-  // activar o desactivar el botón de envio (Sign Up)
+
   checkButton = () => {
     const errorsObj = validator.getErrors();
     const errorsArr = Object.values(errorsObj);
@@ -156,12 +135,12 @@ class Signup {
 
 
   setErrorMessages = () => {
-    // vacia los errores para que no se sumen
+   
     this.errorsWrapper.innerHTML = "";
     
     const errorsObj = validator.getErrors();
 
-    // convertir el objeto a un array de strings
+
     const errorsStringsArr = Object.values(errorsObj);
 
     errorsStringsArr.forEach( (errorStr) => {
@@ -174,7 +153,6 @@ class Signup {
   }
 }
 
-// crear una nueva instanica del Signup (objeto)
 const signup = new Signup();
 
 window.addEventListener("load", signup.addListeners );

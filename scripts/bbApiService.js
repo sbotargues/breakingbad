@@ -23,6 +23,5 @@ function getCharacters() {
   section.appendChild(article);
 }
 
-//.catch((err) => {})
 
 getCharacters();
