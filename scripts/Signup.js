@@ -81,6 +81,8 @@ class Signup {
     
     this.buttonInput.disabled = true;
     window.location.href="./index.html"
+      
+    }
   }
 
   addListeners = () => {

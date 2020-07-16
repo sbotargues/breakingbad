@@ -1,7 +1,7 @@
 function getCharacters() {
   const section = document.querySelector(".characters");
   const article = document.createElement("article");
-  fetch(`https:breakingbadapi.com/api/characters?category=Breaking+Bad`)
+  fetch(`https://breakingbadapi.com/api/characters?category=Breaking+Bad`)
     .then((response) => response.json())
 
     .then((data) => {

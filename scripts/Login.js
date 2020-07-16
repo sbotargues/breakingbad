@@ -50,7 +50,7 @@ class Login {
   }
 
   redirect = () => {
-    setTimeout( ()=> location.assign('index.html'), 2000);
+    setTimeout( ()=> location.assign('index.html'), 500);
   }
 
 }
