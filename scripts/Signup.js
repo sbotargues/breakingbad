@@ -4,7 +4,6 @@
 class Signup {
   constructor () {
     this.nameInput = document.querySelector("#name");
-    
     this.emailInput = document.querySelector("#email");
     this.passwordInput = document.querySelector("#password");
     this.repeatPasswordInput = document.querySelector("#repeat-password");
@@ -17,12 +16,12 @@ class Signup {
   handleEmailInput = (event) => {
     const email = event.target.value;
 
-    validator.validateValidEmail(email);
+     validator.validateValidEmail(email);
 
     const errors = validator.getErrors();
 
-    if (!errors.invalidEmailError) {
-
+     if (!errors.invalidEmailError) {
+      
       validator.validateUniqueEmail(email);
     }
 
@@ -55,17 +54,17 @@ class Signup {
     this.checkButton();
   }
 
-  saveData = (event) => {
+ saveData = (event) => {
 
     event.preventDefault();
-    
+   
     const name = this.nameInput.value;
     const email = this.emailInput.value;
     const password = this.passwordInput.value;
     const repeatPassword = this.repeatPasswordInput.value;
 
     const newUser = new User(name, email, password);
-
+ 
     db.saveNewUser( newUser );
 
 
@@ -80,24 +79,21 @@ class Signup {
     validator.resetValidator();
     
     this.buttonInput.disabled = true;
-    window.location.href="./index.html"
-      
-    }
+    window.location.href="/index.html"
   }
 
   addListeners = () => {
-
+  
     this.emailInput.addEventListener("input", this.handleEmailInput );
     this.passwordInput.addEventListener("input", this.handlePasswordInput);
     this.repeatPasswordInput.addEventListener("input", this.handleRepeatPasswordInput);
-
 
     this.buttonInput.addEventListener("click", this.saveData);
 
   }
 
   showSuccessMessage = () => {
-  
+    
     this.errorsWrapper.innerHTML = "";
 
     const errorsObj = validator.getErrors();
@@ -142,7 +138,7 @@ class Signup {
     
     const errorsObj = validator.getErrors();
 
-
+    
     const errorsStringsArr = Object.values(errorsObj);
 
     errorsStringsArr.forEach( (errorStr) => {
@@ -154,6 +150,7 @@ class Signup {
 
   }
 }
+
 
 const signup = new Signup();
 

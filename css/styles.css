@@ -151,7 +151,9 @@ button:hover {
 
 .message-container p {
   color: rgb(15, 209, 209);
-  font-size: 16px;
+  font-size: 18px;
+  
+
 }
 
 #faq {
