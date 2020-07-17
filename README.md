@@ -40,10 +40,7 @@ The **MVP** will cover the following:
     - img/
     - fonts/
 
-<<<<<<< HEAD
-=======
- 
->>>>>>> 490a497118a9fdec791189ab9e40d6f9a35247e6
+
   ### Links
 
   #### Trello
@@ -54,24 +51,10 @@ The **MVP** will cover the following:
 
   [Github Repo URL](https://github.com/sbotargues/breakingbad)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-  #### Breaking bad API
-=======
-  #### BREAKING BAD API
->>>>>>> 8b18a7a7df585c0473537b556b9f7daae6bca345
-=======
-  #### Breaking Bad API
->>>>>>> af4a58f1be063a11f3b5511ab45bfdd1cd151734
 
-  Api Description
 
   [Api Documentation](https://breakingbadapi.com/documentation)
 
   
 
-  
-<<<<<<< HEAD
 
-=======
->>>>>>> 8b18a7a7df585c0473537b556b9f7daae6bca345
