@@ -49,9 +49,9 @@ The **MVP** will cover the following:
 
   #### Git
 
-  [Github Repo URL](https://github.com/sbotargues/breakingbad)
+  [Github Repo URL](https://sbotargues.github.io/breakingbad/)
 
-
+  Api
 
   [Api Documentation](https://breakingbadapi.com/documentation)
 
