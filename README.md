@@ -15,7 +15,7 @@ The **MVP** will cover the following:
 - **Signup**: A registration form for new users.
 - **Login**: A sign in form for existing users.
 
-![](/img/Captura de Pantalla 2020-07-17 a les 10.40.07.png)
+![](img/Captura de Pantalla 2020-07-17 a les 10.40.07.png)
 
 
 
